@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLA Web Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-inner">
+
+  <nav id="navbar">
+    <a href="index.html" class="logo">MLA<span>.</span></a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="page-hero-content">
+      <span class="label reveal">PORTFOLIO</span>
+      <h1 class="reveal delay-1">Selected<br><span class="outline">Work</span></h1>
+      <p class="reveal delay-2">Projects we're proud to call ours.</p>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="portfolio-section">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="ux">UI/UX</button>
+      <button class="filter-btn" data-filter="motion">Motion</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="p-card reveal" data-cat="branding web" style="--pc:#f5c518">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="p-overlay">
+            <span class="p-tag">Branding · Web</span>
+            <h3>Aurum Finance</h3>
+            <p>Premium fintech rebrand & dashboard UI for a wealth management firm.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+      <div class="p-card reveal delay-1" data-cat="ux" style="--pc:#00ffcc">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#0d2137,#0a3d2e)">
+          <div class="p-overlay">
+            <span class="p-tag">UI/UX</span>
+            <h3>GreenPulse App</h3>
+            <p>Sustainability tracking mobile app with gamification elements.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+      <div class="p-card reveal delay-2" data-cat="motion branding" style="--pc:#ff4d6d">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#2d1b33,#1a0a0a)">
+          <div class="p-overlay">
+            <span class="p-tag">Motion · Branding</span>
+            <h3>Velvet Studio</h3>
+            <p>Artist portfolio with full motion identity system.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+      <div class="p-card reveal" data-cat="web ux" style="--pc:#a78bfa">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#1e1b4b,#312e81)">
+          <div class="p-overlay">
+            <span class="p-tag">Web · UX</span>
+            <h3>Orbit SaaS</h3>
+            <p>B2B analytics platform — design system & front-end build.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+      <div class="p-card reveal delay-1" data-cat="branding" style="--pc:#fb923c">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#2a1206,#431407)">
+          <div class="p-overlay">
+            <span class="p-tag">Branding</span>
+            <h3>Ember Coffee</h3>
+            <p>Artisan coffee brand identity, packaging, and print collateral.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+      <div class="p-card reveal delay-2" data-cat="motion web" style="--pc:#38bdf8">
+        <div class="p-card-inner" style="background:linear-gradient(135deg,#082f49,#0c4a6e)">
+          <div class="p-overlay">
+            <span class="p-tag">Motion · Web</span>
+            <h3>AquaFlow</h3>
+            <p>Interactive water conservation campaign microsite.</p>
+          </div>
+          <div class="p-shape s1"></div>
+          <div class="p-shape s2"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section">
+    <div class="section-header reveal">
+      <span class="label">HOW WE WORK</span>
+      <h2>Our <em>Process</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="p-step reveal">
+        <span class="step-num">01</span>
+        <h3>Discover</h3>
+        <p>Deep dive into your goals, audience, and competitive landscape.</p>
+      </div>
+      <div class="step-arrow reveal delay-1">→</div>
+      <div class="p-step reveal delay-1">
+        <span class="step-num">02</span>
+        <h3>Define</h3>
+        <p>Strategy, wireframes, and creative direction locked in together.</p>
+      </div>
+      <div class="step-arrow reveal delay-2">→</div>
+      <div class="p-step reveal delay-2">
+        <span class="step-num">03</span>
+        <h3>Design</h3>
+        <p>High-fidelity designs that are both beautiful and functional.</p>
+      </div>
+      <div class="step-arrow reveal delay-3">→</div>
+      <div class="p-step reveal delay-3">
+        <span class="step-num">04</span>
+        <h3>Deliver</h3>
+        <p>Pixel-perfect build, QA tested, launched with care.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner reveal">
+    <h2>Have a project in mind?<br><span class="outline">Let's make it happen.</span></h2>
+    <a href="contact.html" class="btn-primary large">Start a Project</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <!-- <span class="logo">nx<span>.</span></span> -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 NEXUS Studio. All rights reserved.</span>
+      <span class="mono">Built with precision ✦</span>
+    </div>
+  </footer>
+
+  <div class="cursor" id="cursor"></div>
+  <script src="main.js"></script>
+</body>
+</html>
